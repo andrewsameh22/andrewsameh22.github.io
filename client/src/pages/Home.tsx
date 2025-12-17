@@ -135,7 +135,7 @@ export default function Home() {
           {/* Highlights */}
           <div className="grid grid-cols-1 md:grid-cols-3 gap-4 animate-fade-in" style={{ animationDelay: '0.5s' }}>
             {[
-              { emoji: '📱', title: 'Flutter Expert', desc: '3+ years experience' },
+              { emoji: '📱', title: 'Flutter Expert', desc: '4+ years experience' },
               { emoji: '🚀', title: '15+ Projects', desc: 'Diverse industries' },
               { emoji: '🎓', title: 'B.Sc Computer Science', desc: 'Modern Academy' },
             ].map((highlight, idx) => (
@@ -174,7 +174,7 @@ export default function Home() {
                 <span>Email</span>
               </a>
               <a
-                href="https://github.com"
+                href="https://github.com/andrewsameh22"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="inline-flex items-center gap-2 px-6 py-3 rounded-lg font-semibold transition-all duration-300 hover:scale-105 hover:shadow-lg text-white"
@@ -186,7 +186,7 @@ export default function Home() {
                 <span>GitHub</span>
               </a>
               <a
-                href="https://linkedin.com"
+                href="https://linkedin.com/in/andrewsameh22"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="inline-flex items-center gap-2 px-6 py-3 rounded-lg font-semibold transition-all duration-300 hover:scale-105 hover:shadow-lg text-white"
