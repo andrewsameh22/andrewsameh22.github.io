@@ -1,6 +1,10 @@
 import { motion } from "framer-motion";
 import { FEATURED_PROJECTS } from "@/data/portfolio";
-import { ExternalLink, Smartphone } from "lucide-react";
+import { Code2, ExternalLink, Smartphone } from "lucide-react";
+
+function hasValidLink(url: string | undefined): boolean {
+  return !!url && url !== "#";
+}
 
 export default function Projects() {
   return (
@@ -19,7 +23,7 @@ export default function Projects() {
             Featured work
           </h2>
           <p className="text-muted-foreground text-lg">
-            A selection of apps built with Flutter—e-commerce, edtech, real estate, and more.
+            A selection of projects that demonstrate my skills in action—purpose, technologies, and outcomes. Ordered by impact and recency.
           </p>
         </motion.div>
 
@@ -41,7 +45,7 @@ export default function Projects() {
                 />
                 <div className="absolute inset-0 bg-gradient-to-t from-background/90 via-background/20 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300" />
                 <div className="absolute inset-0 flex items-center justify-center gap-4 opacity-0 group-hover:opacity-100 transition-opacity duration-300">
-                  {project.links.android && project.links.android !== "#" && (
+                  {hasValidLink(project.links.android) && (
                     <a
                       href={project.links.android}
                       target="_blank"
@@ -52,7 +56,7 @@ export default function Projects() {
                       <Smartphone className="w-5 h-5" />
                     </a>
                   )}
-                  {project.links.ios && project.links.ios !== "#" && (
+                  {hasValidLink(project.links.ios) && (
                     <a
                       href={project.links.ios}
                       target="_blank"
@@ -61,6 +65,17 @@ export default function Projects() {
                       title="iOS"
                     >
                       <ExternalLink className="w-5 h-5" />
+                    </a>
+                  )}
+                  {"repository" in project && typeof (project as { repository?: string }).repository === "string" && (
+                    <a
+                      href={(project as { repository: string }).repository}
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      className="p-3 rounded-xl bg-background/90 backdrop-blur border border-border text-foreground hover:bg-primary hover:text-primary-foreground hover:border-primary transition-colors"
+                      title="Source code"
+                    >
+                      <Code2 className="w-5 h-5" />
                     </a>
                   )}
                 </div>
@@ -76,6 +91,11 @@ export default function Projects() {
                 <p className="text-muted-foreground mt-2 line-clamp-2 leading-relaxed text-sm">
                   {project.description}
                 </p>
+                {"impact" in project && project.impact && (
+                  <p className="text-primary/90 text-xs font-medium mt-2">
+                    {project.impact}
+                  </p>
+                )}
                 <div className="flex flex-wrap gap-2 mt-4 pt-4 border-t border-border/50">
                   {project.tech.map((tech) => (
                     <span

@@ -1,12 +1,11 @@
+import { useState, useEffect } from "react";
 import { motion, AnimatePresence } from "framer-motion";
 import { Menu, X } from "lucide-react";
-import { useState, useEffect } from "react";
-import { PROFILE } from "@/data/portfolio";
 
 const navLinks = [
-  { name: "About", href: "#about" },
-  { name: "Experience", href: "#experience" },
   { name: "Projects", href: "#projects" },
+  { name: "Experience", href: "#experience" },
+  { name: "About", href: "#about" },
   { name: "Skills", href: "#skills" },
   { name: "Contact", href: "#contact" },
 ];

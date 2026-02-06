@@ -69,7 +69,16 @@ export default function Hero() {
           transition={{ duration: 0.5, delay: 0.12 }}
           className="mt-4 text-lg sm:text-xl text-muted-foreground font-medium"
         >
-          Senior Flutter Developer
+          {PROFILE.title}
+        </motion.p>
+
+        <motion.p
+          initial={{ opacity: 0, y: 20 }}
+          animate={{ opacity: 1, y: 0 }}
+          transition={{ duration: 0.5, delay: 0.14 }}
+          className="mt-2 text-base sm:text-lg text-primary font-medium max-w-2xl"
+        >
+          {PROFILE.tagline}
         </motion.p>
 
         <motion.p
@@ -91,7 +100,7 @@ export default function Hero() {
             href="#projects"
             className="inline-flex items-center justify-center gap-2 px-8 py-4 text-base font-semibold text-primary-foreground bg-primary rounded-xl hover:bg-primary/90 transition-all duration-200 hover:shadow-lg hover:shadow-primary/25 active:scale-[0.98] w-fit"
           >
-            View projects
+            View my work
             <ArrowDown className="w-4 h-4 rotate-[-90deg]" />
           </a>
 
@@ -106,7 +115,7 @@ export default function Hero() {
                   target={href.startsWith("http") ? "_blank" : undefined}
                   rel={href.startsWith("http") ? "noopener noreferrer" : undefined}
                   className={`inline-flex items-center gap-2 px-3 py-2 rounded-xl bg-muted/50 border border-border text-muted-foreground hover:text-primary hover:border-primary/40 hover:bg-primary/5 transition-all duration-200 ${showLabel ? "font-medium" : ""}`}
-                  title={label === "CV" ? "Download CV" : label}
+                  title={label === "CV" ? "View CV" : label}
                 >
                   <Icon className="w-5 h-5 flex-shrink-0" />
                   {showLabel && <span className="text-sm">{label}</span>}

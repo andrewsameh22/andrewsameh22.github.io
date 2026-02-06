@@ -5,10 +5,12 @@ export const FEATURED_PROJECTS = [
         role: "Lead Flutter Developer",
         description: "Mobile app for one of Egypt's leading sweets and ice cream brands, delivering a full e-commerce experience with user authentication, product browsing, and online ordering.",
         tech: ["Flutter", "Clean Architecture", "Bloc", "Firebase", "Google Maps"],
+        impact: "Lead project; TestFlight (iOS) & Firebase App Distribution (Android).",
         links: {
             android: "https://appdistribution.firebase.dev/i/87b9d2b9a816f93f",
             ios: "https://testflight.apple.com/join/NV21sw7B"
         },
+        // repository: "https://github.com/andrewsameh22/example-repo", // Add when you have a public repo to showcase
         image: "https://images.unsplash.com/photo-1556742049-0cfed4f7a07d?auto=format&fit=crop&q=80&w=800"
     },
     {
@@ -39,6 +41,7 @@ export const FEATURED_PROJECTS = [
         role: "Flutter Developer",
         description: "Interactive car showroom app enabling users to explore vehicle details, buy, and sell vehicles with advanced filtering.",
         tech: ["Flutter", "GetX", "Rest API"],
+        impact: "Live on App Store (Egypt).",
         links: {
             ios: "https://apps.apple.com/eg/app/auto-house-egypt/id6479742274"
         },
@@ -50,6 +53,7 @@ export const FEATURED_PROJECTS = [
         role: "Flutter Developer",
         description: "Real estate app simplifying property browsing and client-agent communication.",
         tech: ["Flutter", "Real-time Chat", "Maps"],
+        impact: "Live on App Store (Egypt).",
         links: {
             ios: "https://apps.apple.com/eg/app/elbroker/id6499096010"
         },
@@ -72,6 +76,7 @@ export const FEATURED_PROJECTS = [
         role: "Flutter Developer",
         description: "Lifestyle app for pet owners, providing community engagement, services, and pet-care resources.",
         tech: ["Flutter", "Community Features", "Services"],
+        impact: "Live on Google Play & App Store.",
         links: {
             android: "https://play.google.com/store/apps/details?id=com.neon.furreverapp",
             ios: "https://apps.apple.com/eg/app/onefurever/id6741108135"
@@ -84,6 +89,7 @@ export const FEATURED_PROJECTS = [
         role: "Freelance Developer",
         description: "Smart parking and emergency assistance app that connects vehicles to owners via unique QR codes for quick communication and instant access to emergency services.",
         tech: ["Flutter", "QR Scanning", "Emergency Services API"],
+        impact: "Live on Google Play & App Store.",
         links: {
             android: "https://play.google.com/store/apps/details?id=com.dayra.dayra",
             ios: "https://apps.apple.com/eg/app/dayra-app/id6738693435"
@@ -94,7 +100,9 @@ export const FEATURED_PROJECTS = [
 
 export const PROFILE = {
     name: "Andrew Sameh El Prince",
-    title: "Senior Flutter Developer / Software Engineer",
+    title: "Senior Flutter Developer",
+    tagline: "Building scalable cross-platform apps with Clean Architecture and a focus on performance.",
+    careerGoal: "Open to senior and lead Flutter roles, and impactful freelance projects with product teams and startups.",
     location: "Egypt",
     about: "I transform complex requirements into seamless, high-performance mobile experiences. With a background in Computer Science (Ranked 1st) and extensive experience in Fintech and Enterprise systems, I bridge the gap between robust backend architecture and fluid UI/UX.",
     experience: [
@@ -155,9 +163,9 @@ export const PROFILE = {
         },
     },
     skills: {
-        core: ["Flutter", "Dart", "Clean Architecture", "MVVM", "SOLID", "OOP", "Design Patterns"],
+        core: ["Flutter", "Dart", "Clean Architecture", "MVVM", "Bloc", "GetX", "SOLID", "OOP", "Design Patterns"],
         backend: ["Firebase", "SQL", "SQLite", "Rest API"],
-        tools: ["Git", "CI/CD", "Flavors", "App Store Connect", "Google Play Console", "Jira"],
+        tools: ["Git", "CI/CD", "Flavors", "Unit & Widget Testing", "App Store Connect", "Google Play Console", "Jira", "Agile / Scrum"],
     },
     contact: {
         email: "andrewsameh22@hotmail.com",
@@ -166,5 +174,5 @@ export const PROFILE = {
         phone: "+201276361294",
         whatsapp: "https://wa.me/201276361294",
         cv: "https://flowcv.com/resume/b79vkb8k3d"
-    }
+    },
 };
