@@ -1,5 +1,16 @@
 export const FEATURED_PROJECTS = [
     {
+        title: "Sale Sucre",
+        category: "E-Commerce",
+        role: "Flutter Developer",
+        description: "Android version of Sale Sucre, a premium sweets and desserts e-commerce app for the Egyptian market, with intuitive product browsing, secure ordering, and smooth customer experience.",
+        tech: ["Flutter", "Clean Architecture", "E-Commerce", "Android"],
+        links: {
+            android: "#"
+        },
+        image: "/images/projects/sale-sucre.png"
+    },
+    {
         title: "Abdel Rahim Koueider",
         category: "E-Commerce",
         role: "Lead Flutter Developer",
@@ -11,64 +22,7 @@ export const FEATURED_PROJECTS = [
             ios: "https://testflight.apple.com/join/NV21sw7B"
         },
         // repository: "https://github.com/andrewsameh22/example-repo", // Add when you have a public repo to showcase
-        image: "https://images.unsplash.com/photo-1556742049-0cfed4f7a07d?auto=format&fit=crop&q=80&w=800"
-    },
-    {
-        title: "Sale Sucre",
-        category: "E-Commerce",
-        role: "Flutter Developer",
-        description: "Android version of Sale Sucre, a premium sweets and desserts e-commerce app for the Egyptian market, with intuitive product browsing, secure ordering, and smooth customer experience.",
-        tech: ["Flutter", "Clean Architecture", "E-Commerce", "Android"],
-        links: {
-            android: "#"
-        },
-        image: "https://images.unsplash.com/photo-1488477181946-6428a0291777?auto=format&fit=crop&q=80&w=800"
-    },
-    {
-        title: "EduClub",
-        category: "EdTech",
-        role: "Flutter Developer",
-        description: "Educational platform improving resource accessibility for students. Connects students with tutors and resources.",
-        tech: ["Flutter", "MVVM", "Video Streaming"],
-        links: {
-            android: "#"
-        },
-        image: "https://images.unsplash.com/photo-1501504905252-473c47e087f8?auto=format&fit=crop&q=80&w=800"
-    },
-    {
-        title: "AutoHouse",
-        category: "Automotive",
-        role: "Flutter Developer",
-        description: "Interactive car showroom app enabling users to explore vehicle details, buy, and sell vehicles with advanced filtering.",
-        tech: ["Flutter", "GetX", "Rest API"],
-        impact: "Live on App Store (Egypt).",
-        links: {
-            ios: "https://apps.apple.com/eg/app/auto-house-egypt/id6479742274"
-        },
-        image: "https://images.unsplash.com/photo-1560179707-f14e90ef3623?auto=format&fit=crop&q=80&w=800"
-    },
-    {
-        title: "El Broker",
-        category: "Real Estate",
-        role: "Flutter Developer",
-        description: "Real estate app simplifying property browsing and client-agent communication.",
-        tech: ["Flutter", "Real-time Chat", "Maps"],
-        impact: "Live on App Store (Egypt).",
-        links: {
-            ios: "https://apps.apple.com/eg/app/elbroker/id6499096010"
-        },
-        image: "https://images.unsplash.com/photo-1560518883-ce09059ee971?auto=format&fit=crop&q=80&w=800"
-    },
-    {
-        title: "Meal Shuttle",
-        category: "Food Delivery",
-        role: "Freelance Developer",
-        description: "Comprehensive e-commerce food delivery app (similar to Talabat) featuring real-time order tracking, secure payment integration, and intuitive navigation.",
-        tech: ["Flutter", "Payment Gateway", "Geolocation"],
-        links: {
-            android: "#"
-        },
-        image: "https://images.unsplash.com/photo-1526367790999-015078668675?auto=format&fit=crop&q=80&w=800"
+        image: "/images/projects/abdelrahim-koueider.png"
     },
     {
         title: "One Furever",
@@ -81,7 +35,7 @@ export const FEATURED_PROJECTS = [
             android: "https://play.google.com/store/apps/details?id=com.neon.furreverapp",
             ios: "https://apps.apple.com/eg/app/onefurever/id6741108135"
         },
-        image: "https://images.unsplash.com/photo-1548767797-d8c844163c4c?auto=format&fit=crop&q=80&w=800"
+        image: "/images/projects/one-furever.png"
     },
     {
         title: "Dayra",
@@ -94,7 +48,89 @@ export const FEATURED_PROJECTS = [
             android: "https://play.google.com/store/apps/details?id=com.dayra.dayra",
             ios: "https://apps.apple.com/eg/app/dayra-app/id6738693435"
         },
-        image: "https://images.unsplash.com/photo-1506521781263-d8422e82f27a?auto=format&fit=crop&q=80&w=800"
+        image: "/images/projects/dayra.png"
+    },
+    {
+        title: "EduClub",
+        category: "EdTech",
+        role: "Flutter Developer",
+        description: "Educational platform improving resource accessibility for students. Connects students with tutors and resources.",
+        tech: ["Flutter", "MVVM", "Video Streaming"],
+        links: {
+            android: "#"
+        },
+        image: "/images/projects/educlub.png"
+    },
+    {
+        title: "AutoHouse",
+        category: "Automotive",
+        role: "Flutter Developer",
+        description: "Interactive car showroom app enabling users to explore vehicle details, buy, and sell vehicles with advanced filtering.",
+        tech: ["Flutter", "GetX", "Rest API"],
+        impact: "Live on App Store (Egypt).",
+        links: {
+            ios: "https://apps.apple.com/eg/app/auto-house-egypt/id6479742274"
+        },
+        image: "/images/projects/autohouse.png"
+    },
+    {
+        title: "El Broker",
+        category: "Real Estate",
+        role: "Flutter Developer",
+        description: "Real estate app simplifying property browsing and client-agent communication.",
+        tech: ["Flutter", "Real-time Chat", "Maps"],
+        impact: "Live on App Store (Egypt).",
+        links: {
+            ios: "https://apps.apple.com/eg/app/elbroker/id6499096010"
+        },
+        image: "/images/projects/elbroker.png"
+    },
+    {
+        title: "Meal Shuttle",
+        category: "Food Delivery",
+        role: "Freelance Developer",
+        description: "Comprehensive e-commerce food delivery app (similar to Talabat) featuring real-time order tracking, secure payment integration, and intuitive navigation.",
+        tech: ["Flutter", "Payment Gateway", "Geolocation"],
+        links: {
+            android: "#"
+        },
+        image: "/images/projects/meal-shuttle.png"
+    },
+    {
+        title: "HR ERP System",
+        category: "Enterprise",
+        role: "Flutter Developer",
+        description: "Comprehensive HR management solution centralizing employee data.",
+        tech: ["Flutter", "Clean Architecture", "Firebase", "REST API"],
+        links: {},
+        image: "/images/projects/hr-erp.png"
+    },
+    {
+        title: "Installment World",
+        category: "Fintech",
+        role: "Flutter Developer",
+        description: "Financing app enabling users to purchase on credit, similar to ValU.",
+        tech: ["Flutter", "Payment Integration", "REST API"],
+        links: {},
+        image: "/images/projects/installment-world.png"
+    },
+    {
+        title: "E-Klinic Medical CRM",
+        category: "Healthcare",
+        role: "Flutter Developer",
+        description: "CRM system tailored for medical services, improving patient interaction.",
+        tech: ["Flutter", "CRM", "Firebase", "REST API"],
+        links: {},
+        image: "/images/projects/e-klinic.png"
+    },
+    {
+        title: "Euphoria",
+        category: "Real Estate",
+        role: "Flutter Developer",
+        description: "Property-management app offering real-time updates and insights.",
+        tech: ["Flutter", "Real-time Updates", "Maps", "REST API"],
+        links: {},
+        image: "/images/projects/euphoria.png"
     }
 ];
 
@@ -112,6 +148,7 @@ export const PROFILE = {
             period: "02/2025 – Present",
             description: "Leading Flutter development efforts and overseeing app architecture and performance optimization. Mentoring junior developers through code reviews, best practices, and pair programming. Partnering with designers and backend engineers.",
             projects: [
+                { name: "Sale Sucre", desc: "Premium sweets and desserts e-commerce app for the Egyptian market." },
                 { name: "Abdel Rahim Koueider", desc: "Mobile app for leading sweets brand, full e-commerce experience." }
             ],
         },

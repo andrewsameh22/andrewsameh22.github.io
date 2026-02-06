@@ -37,11 +37,11 @@ export default function Projects() {
               transition={{ delay: index * 0.08 }}
               className="group relative overflow-hidden rounded-2xl border border-border bg-card hover:border-primary/30 transition-all duration-300"
             >
-              <div className="aspect-video w-full overflow-hidden bg-muted relative">
+              <div className="aspect-video w-full overflow-hidden bg-muted relative flex items-center justify-center p-4">
                 <img
                   src={project.image}
                   alt={project.title}
-                  className="h-full w-full object-cover transition-transform duration-500 group-hover:scale-105"
+                  className="max-h-full max-w-full w-auto h-auto object-contain transition-transform duration-500 group-hover:scale-105"
                 />
                 <div className="absolute inset-0 bg-gradient-to-t from-background/90 via-background/20 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300" />
                 <div className="absolute inset-0 flex items-center justify-center gap-4 opacity-0 group-hover:opacity-100 transition-opacity duration-300">
@@ -96,16 +96,6 @@ export default function Projects() {
                     {project.impact}
                   </p>
                 )}
-                <div className="flex flex-wrap gap-2 mt-4 pt-4 border-t border-border/50">
-                  {project.tech.map((tech) => (
-                    <span
-                      key={tech}
-                      className="text-xs font-medium px-2.5 py-1 rounded-md bg-muted text-muted-foreground border border-border/50"
-                    >
-                      {tech}
-                    </span>
-                  ))}
-                </div>
               </div>
             </motion.article>
           ))}
