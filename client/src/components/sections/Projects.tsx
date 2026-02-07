@@ -1,19 +1,24 @@
 import { motion } from "framer-motion";
 import { FEATURED_PROJECTS } from "@/data/portfolio";
 import { Code2, ExternalLink, Smartphone } from "lucide-react";
+import { useIsMobile } from "@/hooks/useMobile";
 
 function hasValidLink(url: string | undefined): boolean {
   return !!url && url !== "#";
 }
 
 export default function Projects() {
+  const isMobile = useIsMobile();
+  const skipScrollAnimation = isMobile;
+
   return (
     <section id="projects" className="section-padding bg-background">
       <div className="container-narrow">
         <motion.div
-          initial={{ opacity: 0, y: 24 }}
-          whileInView={{ opacity: 1, y: 0 }}
-          viewport={{ once: true, margin: "-80px" }}
+          initial={skipScrollAnimation ? false : { opacity: 0, y: 24 }}
+          whileInView={skipScrollAnimation ? undefined : { opacity: 1, y: 0 }}
+          viewport={skipScrollAnimation ? undefined : { once: true, margin: "-80px" }}
+          animate={skipScrollAnimation ? { opacity: 1, y: 0 } : undefined}
           className="mb-14 max-w-2xl"
         >
           <p className="text-sm font-semibold text-primary uppercase tracking-widest mb-4">
@@ -31,9 +36,10 @@ export default function Projects() {
           {FEATURED_PROJECTS.map((project) => (
             <motion.article
               key={project.title}
-              initial={{ opacity: 0, y: 16 }}
-              whileInView={{ opacity: 1, y: 0 }}
-              viewport={{ once: true, amount: 0.2 }}
+              initial={skipScrollAnimation ? false : { opacity: 0, y: 16 }}
+              whileInView={skipScrollAnimation ? undefined : { opacity: 1, y: 0 }}
+              viewport={skipScrollAnimation ? undefined : { once: true, amount: 0.2 }}
+              animate={skipScrollAnimation ? { opacity: 1, y: 0 } : undefined}
               transition={{ duration: 0.4 }}
               className="group relative overflow-hidden rounded-2xl border border-border bg-card hover:border-primary/30 transition-all duration-300"
             >
