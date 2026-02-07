@@ -25,7 +25,7 @@ export default function Hero() {
   ];
 
   return (
-    <section className="relative min-h-[100dvh] flex flex-col justify-center overflow-hidden">
+    <section className="relative min-h-[100dvh] flex flex-col justify-center overflow-hidden pt-20">
       {/* Subtle grid + gradient */}
       <div className="absolute inset-0 -z-10">
         <div
