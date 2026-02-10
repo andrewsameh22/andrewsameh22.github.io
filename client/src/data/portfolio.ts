@@ -6,7 +6,8 @@ export const FEATURED_PROJECTS = [
         description: "Android version of Sale Sucre, a premium sweets and desserts e-commerce app for the Egyptian market, with intuitive product browsing, secure ordering, and smooth customer experience.",
         tech: ["Flutter", "Clean Architecture", "E-Commerce", "Android"],
         links: {
-            android: "#"
+            android: "https://appdistribution.firebase.google.com/pub/i/175ca856c826d1f1",
+            ios: "https://testflight.apple.com/join/tf48wP83"
         },
         image: "/images/projects/sale-sucre.png"
     },
@@ -16,7 +17,6 @@ export const FEATURED_PROJECTS = [
         role: "Lead Flutter Developer",
         description: "Mobile app for one of Egypt's leading sweets and ice cream brands, delivering a full e-commerce experience with user authentication, product browsing, and online ordering.",
         tech: ["Flutter", "Clean Architecture", "Bloc", "Firebase", "Google Maps"],
-        impact: "Lead project; TestFlight (iOS) & Firebase App Distribution (Android).",
         links: {
             android: "https://appdistribution.firebase.dev/i/87b9d2b9a816f93f",
             ios: "https://testflight.apple.com/join/NV21sw7B"
@@ -30,7 +30,6 @@ export const FEATURED_PROJECTS = [
         role: "Flutter Developer",
         description: "Lifestyle app for pet owners, providing community engagement, services, and pet-care resources.",
         tech: ["Flutter", "Community Features", "Services"],
-        impact: "Live on Google Play & App Store.",
         links: {
             android: "https://play.google.com/store/apps/details?id=com.neon.furreverapp",
             ios: "https://apps.apple.com/eg/app/onefurever/id6741108135"
@@ -43,7 +42,6 @@ export const FEATURED_PROJECTS = [
         role: "Freelance Developer",
         description: "Smart parking and emergency assistance app that connects vehicles to owners via unique QR codes for quick communication and instant access to emergency services.",
         tech: ["Flutter", "QR Scanning", "Emergency Services API"],
-        impact: "Live on Google Play & App Store.",
         links: {
             android: "https://play.google.com/store/apps/details?id=com.dayra.dayra",
             ios: "https://apps.apple.com/eg/app/dayra-app/id6738693435"
@@ -67,7 +65,6 @@ export const FEATURED_PROJECTS = [
         role: "Flutter Developer",
         description: "Interactive car showroom app enabling users to explore vehicle details, buy, and sell vehicles with advanced filtering.",
         tech: ["Flutter", "GetX", "Rest API"],
-        impact: "Live on App Store (Egypt).",
         links: {
             ios: "https://apps.apple.com/eg/app/auto-house-egypt/id6479742274"
         },
@@ -79,7 +76,6 @@ export const FEATURED_PROJECTS = [
         role: "Flutter Developer",
         description: "Real estate app simplifying property browsing and client-agent communication.",
         tech: ["Flutter", "Real-time Chat", "Maps"],
-        impact: "Live on App Store (Egypt).",
         links: {
             ios: "https://apps.apple.com/eg/app/elbroker/id6499096010"
         },

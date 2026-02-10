@@ -2,6 +2,8 @@ import { motion } from "framer-motion";
 import { PROFILE } from "@/data/portfolio";
 import { Code2, Database, Wrench } from "lucide-react";
 
+const SHOW_SKILLS = false;
+
 const categories: { key: keyof typeof PROFILE.skills; label: string; icon: typeof Code2 }[] = [
   { key: "core", label: "Core", icon: Code2 },
   { key: "backend", label: "Backend & APIs", icon: Database },
@@ -9,6 +11,8 @@ const categories: { key: keyof typeof PROFILE.skills; label: string; icon: typeo
 ];
 
 export default function Skills() {
+  if (!SHOW_SKILLS) return null;
+
   return (
     <section id="skills" className="section-padding bg-muted/30">
       <div className="container-narrow">

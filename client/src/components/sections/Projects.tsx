@@ -77,11 +77,6 @@ export default function Projects() {
                 <p className="text-muted-foreground mt-2 line-clamp-2 leading-relaxed text-sm">
                   {project.description}
                 </p>
-                {"impact" in project && project.impact && (
-                  <p className="text-primary/90 text-xs font-medium mt-2">
-                    {project.impact}
-                  </p>
-                )}
                 {(hasValidLink(project.links.android) || hasValidLink(project.links.ios) || ("repository" in project && typeof (project as { repository?: string }).repository === "string")) && (
                   <div className="flex flex-wrap items-center gap-2 mt-4 pt-4 border-t border-border/50">
                     {hasValidLink(project.links.android) && (
