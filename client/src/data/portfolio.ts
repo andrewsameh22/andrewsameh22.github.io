@@ -21,7 +21,6 @@ export const FEATURED_PROJECTS = [
             android: "https://appdistribution.firebase.dev/i/87b9d2b9a816f93f",
             ios: "https://testflight.apple.com/join/NV21sw7B"
         },
-        // repository: "https://github.com/andrewsameh22/example-repo", // Add when you have a public repo to showcase
         image: "/images/projects/abdelrahim-koueider.png"
     },
     {
@@ -49,15 +48,15 @@ export const FEATURED_PROJECTS = [
         image: "/images/projects/dayra.png"
     },
     {
-        title: "EduClub",
-        category: "EdTech",
+        title: "El Broker",
+        category: "Real Estate",
         role: "Flutter Developer",
-        description: "Educational platform improving resource accessibility for students. Connects students with tutors and resources.",
-        tech: ["Flutter", "MVVM", "Video Streaming"],
+        description: "Real estate app simplifying property browsing and client-agent communication.",
+        tech: ["Flutter", "Real-time Chat", "Maps"],
         links: {
-            android: "#"
+            ios: "https://apps.apple.com/eg/app/elbroker/id6499096010"
         },
-        image: "/images/projects/educlub.png"
+        image: "/images/projects/elbroker.png"
     },
     {
         title: "AutoHouse",
@@ -71,26 +70,13 @@ export const FEATURED_PROJECTS = [
         image: "/images/projects/autohouse.png"
     },
     {
-        title: "El Broker",
-        category: "Real Estate",
+        title: "E-Klinic Medical CRM",
+        category: "Healthcare",
         role: "Flutter Developer",
-        description: "Real estate app simplifying property browsing and client-agent communication.",
-        tech: ["Flutter", "Real-time Chat", "Maps"],
-        links: {
-            ios: "https://apps.apple.com/eg/app/elbroker/id6499096010"
-        },
-        image: "/images/projects/elbroker.png"
-    },
-    {
-        title: "Meal Shuttle",
-        category: "Food Delivery",
-        role: "Freelance Developer",
-        description: "Comprehensive e-commerce food delivery app (similar to Talabat) featuring real-time order tracking, secure payment integration, and intuitive navigation.",
-        tech: ["Flutter", "Payment Gateway", "Geolocation"],
-        links: {
-            android: "#"
-        },
-        image: "/images/projects/meal-shuttle.png"
+        description: "CRM system tailored for medical services, improving patient interaction.",
+        tech: ["Flutter", "CRM", "Firebase", "REST API"],
+        links: {},
+        image: "/images/projects/e-klinic.png"
     },
     {
         title: "HR ERP System",
@@ -111,15 +97,6 @@ export const FEATURED_PROJECTS = [
         image: "/images/projects/installment-world.png"
     },
     {
-        title: "E-Klinic Medical CRM",
-        category: "Healthcare",
-        role: "Flutter Developer",
-        description: "CRM system tailored for medical services, improving patient interaction.",
-        tech: ["Flutter", "CRM", "Firebase", "REST API"],
-        links: {},
-        image: "/images/projects/e-klinic.png"
-    },
-    {
         title: "Euphoria",
         category: "Real Estate",
         role: "Flutter Developer",
@@ -127,6 +104,46 @@ export const FEATURED_PROJECTS = [
         tech: ["Flutter", "Real-time Updates", "Maps", "REST API"],
         links: {},
         image: "/images/projects/euphoria.png"
+    },
+    {
+        title: "EduClub",
+        category: "EdTech",
+        role: "Flutter Developer",
+        description: "Educational platform improving resource accessibility for students. Connects students with tutors and resources.",
+        tech: ["Flutter", "MVVM", "Video Streaming"],
+        links: {
+            android: "#"
+        },
+        image: "/images/projects/educlub.png"
+    },
+    {
+        title: "Tick Money",
+        category: "Media / Streaming",
+        role: "Freelance Developer",
+        description: "High-performance video streaming app optimized for smooth playback.",
+        tech: ["Flutter", "Video Streaming", "REST API"],
+        links: {},
+        image: "/images/projects/tick-money.png"
+    },
+    {
+        title: "Borrow Code",
+        category: "Fintech",
+        role: "Freelance Developer",
+        description: "Installment-based 'buy now, pay later' app for U.S. sellers.",
+        tech: ["Flutter", "Payments", "REST API"],
+        links: {},
+        image: "/images/projects/borrow-code.png"
+    },
+    {
+        title: "Meal Shuttle",
+        category: "Food Delivery",
+        role: "Freelance Developer",
+        description: "Comprehensive e-commerce food delivery app (similar to Talabat) featuring real-time order tracking, secure payment integration, and intuitive navigation.",
+        tech: ["Flutter", "Payment Gateway", "Geolocation"],
+        links: {
+            android: "#"
+        },
+        image: "/images/projects/meal-shuttle.png"
     }
 ];
 
