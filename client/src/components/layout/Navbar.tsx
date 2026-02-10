@@ -9,6 +9,14 @@ const navLinks = [
   { name: "Contact", href: "#contact" },
 ];
 
+function scrollToHash(hash: string) {
+  const el = document.querySelector(hash);
+  if (el) {
+    el.scrollIntoView({ behavior: "smooth", block: "start" });
+  }
+  if (hash) window.history.replaceState(null, "", hash);
+}
+
 export default function Navbar() {
   const [isOpen, setIsOpen] = useState(false);
   const [scrolled, setScrolled] = useState(false);
@@ -73,7 +81,11 @@ export default function Navbar() {
                   key={link.name}
                   href={link.href}
                   className="block py-3 text-base font-medium text-muted-foreground hover:text-foreground transition-colors"
-                  onClick={() => setIsOpen(false)}
+                  onClick={(e) => {
+                    e.preventDefault();
+                    setIsOpen(false);
+                    setTimeout(() => scrollToHash(link.href), 150);
+                  }}
                 >
                   {link.name}
                 </a>
