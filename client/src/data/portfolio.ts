@@ -24,6 +24,18 @@ export const FEATURED_PROJECTS = [
         image: "/images/projects/abdelrahim-koueider.png"
     },
     {
+        title: "Titan Delivery App",
+        category: "Delivery",
+        role: "Flutter Developer",
+        description: "Delivery agent app that displays daily assigned orders, allows drivers to confirm order pickup from branches and delivery to clients via action buttons, and report non-delivered orders with multiple predefined scenarios.",
+        tech: ["Flutter", "Delivery", "Firebase App Distribution"],
+        links: {
+            android: "https://appdistribution.firebase.dev/i/032e611ce2c02989",
+            ios: "https://testflight.apple.com/join/aVNtD3mA"
+        },
+        image: "/images/projects/titan-delivery.png"
+    },
+    {
         title: "One Furever",
         category: "Pet Care",
         role: "Flutter Developer",
@@ -162,7 +174,8 @@ export const PROFILE = {
             description: "Leading Flutter development efforts and overseeing app architecture and performance optimization. Mentoring junior developers through code reviews, best practices, and pair programming. Partnering with designers and backend engineers.",
             projects: [
                 { name: "Sale Sucre", desc: "Premium sweets and desserts e-commerce app for the Egyptian market." },
-                { name: "Abdel Rahim Koueider", desc: "Mobile app for leading sweets brand, full e-commerce experience." }
+                { name: "Abdel Rahim Koueider", desc: "Mobile app for leading sweets brand, full e-commerce experience." },
+                { name: "Titan Delivery App", desc: "Delivery agent app for assigned orders, pickup/delivery confirmation, and non-delivery reporting with predefined scenarios." }
             ],
         },
         {

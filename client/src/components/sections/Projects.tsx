@@ -1,7 +1,10 @@
+import { useState } from "react";
 import { motion } from "framer-motion";
 import { FEATURED_PROJECTS } from "@/data/portfolio";
-import { Code2 } from "lucide-react";
+import { Code2, ChevronDown, ChevronUp } from "lucide-react";
 import { useIsMobile } from "@/hooks/useMobile";
+
+const INITIAL_PROJECT_COUNT = 4;
 
 function hasValidLink(url: string | undefined): boolean {
   return !!url && url !== "#";
@@ -26,6 +29,9 @@ function AppStoreIcon({ className }: { className?: string }) {
 export default function Projects() {
   const isMobile = useIsMobile();
   const skipScrollAnimation = isMobile;
+  const [showAll, setShowAll] = useState(false);
+  const projectsToShow = showAll ? FEATURED_PROJECTS : FEATURED_PROJECTS.slice(0, INITIAL_PROJECT_COUNT);
+  const hasMore = FEATURED_PROJECTS.length > INITIAL_PROJECT_COUNT;
 
   return (
     <section id="projects" className="section-padding bg-background">
@@ -49,7 +55,7 @@ export default function Projects() {
         </motion.div>
 
         <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
-          {FEATURED_PROJECTS.map((project) => (
+          {projectsToShow.map((project) => (
             <motion.article
               key={project.title}
               initial={skipScrollAnimation ? false : { opacity: 0, y: 16 }}
@@ -121,6 +127,28 @@ export default function Projects() {
             </motion.article>
           ))}
         </div>
+
+        {hasMore && (
+          <div className="mt-10 flex justify-center">
+            <button
+              type="button"
+              onClick={() => setShowAll(!showAll)}
+              className="inline-flex items-center gap-2 px-5 py-3 rounded-xl bg-muted border border-border text-sm font-medium text-foreground hover:bg-primary hover:text-primary-foreground hover:border-primary transition-colors"
+            >
+              {showAll ? (
+                <>
+                  <ChevronUp className="w-4 h-4" />
+                  Show less
+                </>
+              ) : (
+                <>
+                  <ChevronDown className="w-4 h-4" />
+                  Show more ({FEATURED_PROJECTS.length - INITIAL_PROJECT_COUNT} more)
+                </>
+              )}
+            </button>
+          </div>
+        )}
       </div>
     </section>
   );
