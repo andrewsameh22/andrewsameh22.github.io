@@ -41,19 +41,6 @@ export default function Hero() {
       </div>
 
       <div className="container-narrow relative z-10">
-        <motion.div
-          initial={{ opacity: 0, y: 16 }}
-          animate={{ opacity: 1, y: 0 }}
-          transition={{ duration: 0.5 }}
-          className="inline-flex items-center gap-2 px-4 py-2 rounded-full bg-card border border-border mb-8"
-        >
-          <span className="relative flex h-2 w-2">
-            <span className="absolute inline-flex h-full w-full animate-ping rounded-full bg-primary opacity-60" />
-            <span className="relative inline-flex h-2 w-2 rounded-full bg-primary" />
-          </span>
-          <span className="text-sm text-muted-foreground">Available for new projects</span>
-        </motion.div>
-
         <motion.h1
           initial={{ opacity: 0, y: 20 }}
           animate={{ opacity: 1, y: 0 }}
@@ -69,25 +56,25 @@ export default function Hero() {
           transition={{ duration: 0.5, delay: 0.12 }}
           className="mt-4 text-lg sm:text-xl text-muted-foreground font-medium"
         >
-          {PROFILE.title}
+          Senior Flutter Developer
         </motion.p>
 
         <motion.p
           initial={{ opacity: 0, y: 20 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.5, delay: 0.14 }}
-          className="mt-2 text-base sm:text-lg text-primary font-medium max-w-2xl"
+          className="mt-4 text-base sm:text-lg text-muted-foreground max-w-2xl leading-relaxed"
         >
-          {PROFILE.tagline}
+          Flutter Developer specializing in scalable mobile applications, available for freelance and remote work worldwide.
         </motion.p>
 
         <motion.p
           initial={{ opacity: 0, y: 20 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.5, delay: 0.16 }}
-          className="mt-6 text-base sm:text-lg text-muted-foreground max-w-2xl leading-relaxed"
+          className="mt-2 text-base sm:text-lg text-muted-foreground max-w-2xl leading-relaxed"
         >
-          {PROFILE.about}
+          I build high-performance cross-platform mobile apps using Flutter, clean architecture, and modern backend systems.
         </motion.p>
 
         <motion.div
