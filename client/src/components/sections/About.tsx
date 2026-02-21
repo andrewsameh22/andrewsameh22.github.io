@@ -21,11 +21,16 @@ export default function About() {
           <h2 className="text-3xl sm:text-4xl font-bold tracking-tight text-foreground mb-4">
             About me
           </h2>
-          <p className="text-lg text-muted-foreground leading-relaxed mb-2">
+          <p className="text-lg text-muted-foreground leading-relaxed mb-4">
             I'm a <span className="font-semibold text-foreground">Senior Flutter Developer</span> with a
             Computer Science degree (ranked first in my department) and experience across fintech, e-commerce,
             and enterprise apps. I focus on Clean Architecture, performance, and turning complex requirements
             into smooth, user-centered products.
+          </p>
+          <p className="text-lg text-muted-foreground leading-relaxed mb-2">
+            I care about maintainable code, clear APIs, and shipping on time. Whether it's a new product from
+            scratch or scaling an existing app, I work closely with product and design to deliver solutions
+            that perform well and are a pleasure to use.
           </p>
           {"careerGoal" in PROFILE && PROFILE.careerGoal && (
             <p className="text-base text-primary/90 font-medium mt-4">
