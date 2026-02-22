@@ -3,8 +3,8 @@ export const FEATURED_PROJECTS = [
         title: "Sale Sucre",
         category: "E-Commerce",
         role: "Flutter Developer",
-        description: "Android version of Sale Sucre, a premium sweets and desserts e-commerce app for the Egyptian market, with intuitive product browsing, secure ordering, and smooth customer experience.",
-        tech: ["Flutter", "Clean Architecture", "E-Commerce", "Android"],
+        description: "Mobile app for Sale Sucre, a premium sweets and desserts e-commerce brand in Egypt, with intuitive product browsing, secure ordering, and smooth customer experience.",
+        tech: ["Flutter", "Clean Architecture", "E-Commerce", "Android", "iOS"],
         links: {
             android: "https://appdistribution.firebase.google.com/pub/i/175ca856c826d1f1",
             ios: "https://testflight.apple.com/join/tf48wP83"
@@ -39,7 +39,7 @@ export const FEATURED_PROJECTS = [
         title: "One Furever",
         category: "Pet Care",
         role: "Flutter Developer",
-        description: "Lifestyle app for pet owners, providing community engagement, services, and pet-care resources.",
+        description: "Egypt's pet adoption and rescue platform: adopt dogs and cats, report lost pets, and connect with rescuers and shelters. Post adoptable animal, help rehome pets in need. Community features include chat andlocal meetups for pet owners.",
         tech: ["Flutter", "Community Features", "Services"],
         links: {
             android: "https://play.google.com/store/apps/details?id=com.neon.furreverapp",
@@ -63,7 +63,7 @@ export const FEATURED_PROJECTS = [
         title: "El Broker",
         category: "Real Estate",
         role: "Flutter Developer",
-        description: "Real estate app simplifying property browsing and client-agent communication.",
+        description: "Real estate app simplifying property browsing and client-agent communication. Includes an installment calculator and the option to add and list your own properties. Browse, list, and connect with agents in one place.",
         tech: ["Flutter", "Real-time Chat", "Maps"],
         links: {
             ios: "https://apps.apple.com/eg/app/elbroker/id6499096010"

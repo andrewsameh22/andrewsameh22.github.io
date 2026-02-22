@@ -84,7 +84,7 @@ export default function Projects() {
                 <h3 className="text-xl font-bold text-foreground mt-2 group-hover:text-primary transition-colors">
                   {project.title}
                 </h3>
-                <p className="text-muted-foreground mt-2 line-clamp-2 leading-relaxed text-sm">
+                <p className="text-muted-foreground mt-2 leading-relaxed text-sm">
                   {project.description}
                 </p>
                 {(hasValidLink(project.links.android) || hasValidLink(project.links.ios) || ("repository" in project && typeof (project as { repository?: string }).repository === "string")) && (
