@@ -1,6 +1,8 @@
 import { useState, useEffect } from "react";
 import { motion, AnimatePresence } from "framer-motion";
-import { Menu, X } from "lucide-react";
+import { Menu, Moon, Sun, X } from "lucide-react";
+import { useTheme } from "@/contexts/ThemeContext";
+import { Switch } from "@/components/ui/switch";
 
 const navLinks = [
   { name: "Projects", href: "#projects" },
@@ -20,6 +22,7 @@ function scrollToHash(hash: string) {
 export default function Navbar() {
   const [isOpen, setIsOpen] = useState(false);
   const [scrolled, setScrolled] = useState(false);
+  const { theme, toggleTheme, switchable } = useTheme();
 
   useEffect(() => {
     const handleScroll = () => setScrolled(window.scrollY > 32);
@@ -53,6 +56,17 @@ export default function Navbar() {
                 {link.name}
               </a>
             ))}
+            {switchable && toggleTheme && (
+              <div className="flex items-center gap-2">
+                <Sun className="h-4 w-4 text-muted-foreground" aria-hidden />
+                <Switch
+                  checked={theme === "dark"}
+                  onCheckedChange={toggleTheme}
+                  aria-label="Toggle dark mode"
+                />
+                <Moon className="h-4 w-4 text-muted-foreground" aria-hidden />
+              </div>
+            )}
           </div>
 
           <button
@@ -90,6 +104,17 @@ export default function Navbar() {
                   {link.name}
                 </a>
               ))}
+              {switchable && toggleTheme && (
+                <div className="flex items-center gap-2 pt-3 mt-3 border-t border-border">
+                  <Sun className="h-4 w-4 text-muted-foreground" aria-hidden />
+                  <Switch
+                    checked={theme === "dark"}
+                    onCheckedChange={toggleTheme}
+                    aria-label="Toggle dark mode"
+                  />
+                  <Moon className="h-4 w-4 text-muted-foreground" aria-hidden />
+                </div>
+              )}
             </div>
           </motion.div>
         )}

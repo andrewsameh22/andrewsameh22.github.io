@@ -28,24 +28,26 @@
   --color-input: var(--border);
 }
 
+/* Light mode (default) */
 :root {
-  --background: #0a0b0d;
-  --foreground: #f2f0eb;
-  --card: #12141a;
-  --card-foreground: #f2f0eb;
-  --primary: #22d3ee;
-  --primary-foreground: #0a0b0d;
-  --muted: #1a1d24;
-  --muted-foreground: #8b92a0;
-  --accent: #22d3ee;
-  --border: #252830;
-  --ring: #22d3ee;
+  --background: #f8f9fa;
+  --foreground: #1a1d24;
+  --card: #ffffff;
+  --card-foreground: #1a1d24;
+  --primary: #0891b2;
+  --primary-foreground: #ffffff;
+  --muted: #f1f5f9;
+  --muted-foreground: #64748b;
+  --accent: #06b6d4;
+  --border: #e2e8f0;
+  --ring: #0891b2;
   --radius: 0.625rem;
   --destructive: #ef4444;
   --font-heading: "Syne", sans-serif;
   --font-body: "DM Sans", sans-serif;
 }
 
+/* Dark mode */
 .dark {
   --background: #0a0b0d;
   --foreground: #f2f0eb;
