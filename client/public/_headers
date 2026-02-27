@@ -1,0 +1,6 @@
+# Netlify: long cache for hashed assets and images
+/assets/*
+  Cache-Control: public, max-age=31536000, immutable
+
+/images/*
+  Cache-Control: public, max-age=31536000, immutable

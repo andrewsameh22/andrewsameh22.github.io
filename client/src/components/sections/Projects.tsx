@@ -71,6 +71,7 @@ export default function Projects() {
                   alt={project.title}
                   width={640}
                   height={360}
+                  sizes="(max-width: 768px) 100vw, 50vw"
                   loading="lazy"
                   decoding="async"
                   className="max-h-full max-w-full w-auto h-auto object-contain transition-transform duration-500 group-hover:scale-105"
