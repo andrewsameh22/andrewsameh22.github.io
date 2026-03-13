@@ -65,7 +65,7 @@ export default function Projects() {
               transition={{ duration: 0.4 }}
               className="group relative overflow-hidden rounded-2xl border border-border bg-card hover:border-primary/30 transition-all duration-300"
             >
-              <div className="aspect-video w-full overflow-hidden bg-muted relative flex items-center justify-center p-4">
+              <div className="aspect-video w-full overflow-hidden bg-slate-200 dark:bg-muted relative flex items-center justify-center p-4">
                 <img
                   src={project.image}
                   alt={project.title}
